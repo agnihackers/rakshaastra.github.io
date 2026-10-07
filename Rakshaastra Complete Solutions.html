@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050813">
+<title>RAKSHAĀSTRA COMPLETE SOLUTIONS | Web, Security, Marketing &amp; Creative Studio</title>
+<meta name="description" content="Rakshaastra Team: web and mobile apps, cybersecurity services and training, performance and influencer marketing, fashion shoots, graphic design, video editing and animation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#050813;--bg2:#0a1022;--card:#0e1630;--line:#1d2850;
+  --text:#e8ecf8;--mute:#9aa6c8;
+  --cy:#22d3ee;--bl:#4f7bff;--vi:#8b5cf6;
+  --head:"Sora","Segoe UI",Arial,sans-serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--bg);color:var(--text);font-family:var(--body);line-height:1.65;font-size:1rem;overflow-x:hidden;
+  background-image:linear-gradient(rgba(34,211,238,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(34,211,238,.035) 1px,transparent 1px);background-size:44px 44px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--cy);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+section{padding:88px 0}
+h1,h2,h3{font-family:var(--head);line-height:1.12}
+h2{font-size:clamp(1.8rem,4.2vw,2.8rem);font-weight:800;margin-bottom:14px}
+h3{font-weight:700}
+.kicker{display:inline-block;font-size:.85rem;font-weight:600;color:var(--cy);border:1px solid var(--line);border-radius:999px;padding:5px 14px;margin-bottom:18px;background:rgba(34,211,238,.06)}
+.lede{color:var(--mute);max-width:62ch;margin-bottom:44px}
+.grad{background:linear-gradient(90deg,var(--cy),var(--bl) 55%,var(--vi));-webkit-background-clip:text;background-clip:text;color:transparent}
+
+header.nav{position:sticky;top:0;z-index:50;background:rgba(5,8,19,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:20px;height:68px}
+.brand{font-family:var(--head);font-weight:800;text-decoration:none;display:flex;align-items:center;gap:10px;margin-right:auto;font-size:1.02rem}
+.brand svg{width:28px;height:28px;stroke:var(--cy);fill:none;stroke-width:2}
+.menu{display:flex;gap:26px;list-style:none;font-size:.95rem}
+.menu a{text-decoration:none;color:var(--mute)}
+.menu a:hover{color:var(--text)}
+.social{display:flex;gap:8px}
+.social a,.float a{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);color:var(--cy);background:var(--bg2)}
+.social a:hover,.float a:hover{border-color:var(--cy);background:rgba(34,211,238,.12)}
+.social svg,.float svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.burger{display:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:var(--bg2);color:var(--text);cursor:pointer;font-size:1.2rem}
+.btn{display:inline-block;padding:12px 24px;border-radius:10px;font-weight:600;text-decoration:none;font-size:.97rem;border:1px solid var(--line);color:var(--text);background:var(--card)}
+.btn:hover{border-color:var(--cy)}
+.btn.pri{border:0;color:#04101a;background:linear-gradient(90deg,var(--cy),var(--bl))}
+.btn.pri:hover{filter:brightness(1.1)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+
+.hero{padding:76px 0 70px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:620px;height:620px;right:-180px;top:-200px;background:radial-gradient(circle,rgba(79,123,255,.28),transparent 65%);pointer-events:none}
+.hgrid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;position:relative}
+.hero h1{font-size:clamp(2.3rem,6vw,4.4rem);font-weight:800;letter-spacing:-.02em;margin-bottom:8px}
+.hero h2.sub{font-size:clamp(1rem,2.2vw,1.35rem);letter-spacing:.18em;color:var(--cy);margin-bottom:22px}
+.hero p{color:var(--mute);max-width:52ch;font-size:1.1rem;margin-bottom:30px}
+.term{border:1px solid var(--line);border-radius:14px;background:var(--bg2);overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.5)}
+.term .bar{display:flex;align-items:center;gap:7px;padding:11px 14px;border-bottom:1px solid var(--line);font-size:.8rem;color:var(--mute)}
+.term .bar i{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.term .bar b{margin-left:auto;color:var(--cy);font-weight:600}
+.term ul{list-style:none;padding:18px 20px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88rem;display:grid;gap:11px}
+.term li:before{content:"✔ ";color:var(--cy)}
+.term .cur{display:inline-block;width:8px;height:15px;background:var(--cy);vertical-align:-2px;animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:56px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--line);position:relative}
+.stats div{background:var(--bg2);padding:22px 20px}
+.stats strong{display:block;font-family:var(--head);font-size:1.5rem}
+.stats span{color:var(--mute);font-size:.9rem}
+
+.pill{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pill div{padding:28px 26px;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+.pill h3{font-size:1.2rem;margin-bottom:8px}
+.pill p{color:var(--mute);font-size:.96rem}
+
+.sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.sc{padding:28px 26px;border:1px solid var(--line);border-radius:16px;background:var(--card);transition:border-color .2s,transform .2s}
+.sc:hover{border-color:var(--cy);transform:translateY(-3px)}
+.sc svg{width:44px;height:44px;stroke:var(--cy);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;margin-bottom:16px}
+.sc h3{font-size:1.15rem;margin-bottom:8px}
+.sc p{color:var(--mute);font-size:.95rem;margin-bottom:14px}
+.tags{display:flex;flex-wrap:wrap;gap:7px;list-style:none}
+.tags li{font-size:.78rem;padding:3px 10px;border-radius:999px;border:1px solid var(--line);color:var(--mute)}
+.sc.wide{grid-column:span 3;display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center}
+.sc.wide svg{margin:0}
+
+.band{background:var(--bg2);border-block:1px solid var(--line)}
+.cl{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cl div{padding:30px 26px;border:1px solid var(--line);border-radius:14px;background:var(--bg)}
+.cl h3{font-size:1.15rem;margin-bottom:6px}
+.cl p{color:var(--mute);font-size:.93rem}
+.cl .dot{display:block;width:10px;height:10px;border-radius:50%;background:var(--cy);margin-bottom:16px;box-shadow:0 0 14px var(--cy)}
+
+.wgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.wgrid a{display:block;text-decoration:none;padding:30px 26px;border-radius:16px;border:1px solid var(--line);background:linear-gradient(160deg,var(--card),var(--bg2))}
+.wgrid a:hover{border-color:var(--cy)}
+.wgrid h3{font-size:1.2rem;margin-bottom:8px}
+.wgrid p{color:var(--mute);font-size:.95rem;margin-bottom:18px}
+.wgrid b{color:var(--cy);font-weight:600;font-size:.95rem}
+
+.cta{text-align:center;padding:64px 28px;border:1px solid var(--line);border-radius:22px;background:radial-gradient(ellipse at top,rgba(79,123,255,.22),transparent 70%),var(--card)}
+.cta h2{max-width:20ch;margin-inline:auto}
+.cta .lede{margin-inline:auto;margin-bottom:28px}
+.cta .btns{justify-content:center}
+
+footer{border-top:1px solid var(--line);padding:46px 0 30px;background:var(--bg2);font-size:.93rem}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px;margin-bottom:30px}
+footer h4{font-family:var(--head);margin-bottom:12px;font-size:1rem}
+footer ul{list-style:none;display:grid;gap:8px;color:var(--mute)}
+footer a{text-decoration:none;overflow-wrap:anywhere}
+footer a:hover{color:var(--cy)}
+footer p{color:var(--mute);max-width:40ch}
+.copy{border-top:1px solid var(--line);padding-top:20px;color:var(--mute);font-size:.88rem}
+.float{position:fixed;right:14px;bottom:14px;z-index:60;display:flex;flex-direction:column;gap:10px}
+.float a{width:48px;height:48px;box-shadow:0 6px 18px rgba(0,0,0,.5)}
+
+@media(max-width:980px){
+  .hgrid{grid-template-columns:1fr}
+  .sgrid,.wgrid,.cl,.pill{grid-template-columns:repeat(2,1fr)}
+  .sc.wide{grid-column:span 2}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .fgrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+  .burger{display:block}
+  .social{display:none}
+  .menu{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg2);border-bottom:1px solid var(--line);padding:8px 22px 16px}
+  .menu.open{display:flex}
+  .menu a{display:block;padding:13px 0;border-bottom:1px solid var(--line)}
+}
+@media(max-width:600px){
+  section{padding:62px 0}
+  .hero{padding:48px 0 50px}
+  .sgrid,.wgrid,.cl,.pill,.fgrid{grid-template-columns:1fr}
+  .sc.wide{grid-column:auto;grid-template-columns:1fr;gap:12px}
+  .btns .btn{flex:1 1 100%;text-align:center}
+  .stats strong{font-size:1.25rem}
+  .cta{padding:44px 20px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.term .cur{animation:none}.sc{transition:none}}
+
+.sc{display:flex;flex-direction:column;align-items:flex-start}
+.sc p{flex:1 1 auto}
+.sc .tags{margin-bottom:20px}
+.modal{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(2,4,12,.82)}
+.modal.open{display:flex}
+.mbox{width:min(760px,100%);height:min(88vh,860px);display:flex;flex-direction:column;border:1px solid var(--line);border-radius:16px;background:var(--bg2);overflow:hidden}
+.mhead{display:flex;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid var(--line)}
+.mhead h3{font-size:1rem;margin-right:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mhead a{font-size:.88rem;color:var(--cy);text-decoration:none;white-space:nowrap}
+.mhead button{width:36px;height:36px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:1.1rem;cursor:pointer}
+.mbox iframe{flex:1;width:100%;border:0;background:#fff}
+@media(max-width:600px){.modal{padding:0}.mbox{height:100%;border-radius:0;border:0}.mhead a{display:none}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Rakshaastra Team home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l11 4.5v8c0 7-4.6 11.6-11 14-6.4-2.4-11-7-11-14v-8z"/><path d="M16 9l3.5 7L16 23l-3.5-7z"/></svg>
+      RAKSHAĀSTRA TEAM
+    </a>
+    <nav aria-label="Main"><ul class="menu" id="menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#clients">Clients</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#register">Register</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul></nav>
+    <div class="social">
+      <a href="https://linktr.ee/rakshaastra.team" target="_blank" rel="noopener" aria-label="Rakshaastra on Linktree"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M12 8l-5-4M12 8l5-4M12 13l-7-3M12 13l7-3M9 21h6"/></svg></a>
+      <a href="https://www.instagram.com/rakshaastra.team/" target="_blank" rel="noopener" aria-label="Rakshaastra on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg></a>
+    </div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="hgrid">
+      <div>
+        <span class="kicker">Web · Security · Marketing · Creative</span>
+        <h1><span class="grad">RAKSHAĀSTRA</span></h1>
+        <h2 class="sub">COMPLETE SOLUTIONS</h2>
+        <p>Software, security, marketing, and creative production from one team. We build it, protect it, and get it seen.</p>
+        <div class="btns">
+          <a class="btn pri" href="#services">Explore services</a>
+          <a class="btn" href="#work">View previous work</a>
+        </div>
+      </div>
+      <div class="term" aria-hidden="true">
+        <div class="bar"><i></i><i></i><i></i> rakshaastra-core.sh <b>ACTIVE</b></div>
+        <ul>
+          <li>web_&amp;_mobile_apps</li>
+          <li>cybersecurity_&amp;_training</li>
+          <li>performance_marketing</li>
+          <li>fashion_model_shoots</li>
+          <li>design_video_animation</li>
+          <li><span class="cur"></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="stats">
+      <div><strong>5</strong><span>Core services</span></div>
+      <div><strong>3</strong><span>Client &amp; sourcing companies</span></div>
+      <div><strong>Reels · Videos</strong><span>Story-based ad films</span></div>
+      <div><strong>1 Team</strong><span>Build, protect, promote</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <span class="kicker">Why Rakshaastra</span>
+    <h2>One team for your whole <span class="grad">digital presence</span></h2>
+    <p class="lede">Instead of hiring a developer, a security consultant, a marketer and a studio separately, work with one team that keeps everything consistent.</p>
+    <div class="pill">
+      <div><h3>Build</h3><p>Web and mobile apps, plus design, video and animation that give your brand a clear identity.</p></div>
+      <div><h3>Protect</h3><p>Cybersecurity services and training to keep your systems, and your people, safe.</p></div>
+      <div><h3>Grow</h3><p>Performance and influencer marketing, fashion shoots and story-based ads that get you noticed.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="band">
+  <div class="wrap">
+    <span class="kicker">Our services</span>
+    <h2>Everything you need, <span class="grad">under one roof</span></h2>
+    <p class="lede">Five services, each handled by people who do that work every day.</p>
+    <div class="sgrid">
+      <article class="sc">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="8" width="30" height="22" rx="3"/><path d="M12 38h14M19 30v8"/><rect x="32" y="16" width="12" height="24" rx="3"/></svg>
+        <h3>Web &amp; mobile application development</h3>
+        <p>Websites, web apps, and Android and iOS apps built for your business.</p>
+        <ul class="tags"><li>Websites</li><li>Web apps</li><li>Android</li><li>iOS</li></ul>
+        <a class="btn pri" href="https://forms.gle/NBiHPKxUJfYfkV46A" data-embed="https://docs.google.com/forms/d/e/1FAIpQLScVWFGcL0HlBtR1d0_1qbb37Qwq4oumC44Y8OW3SJdb1dGu8w/viewform?embedded=true" data-title="Web &amp; mobile application development" target="_blank" rel="noopener">Fill enquiry form</a>
+      </article>
+      <article class="sc">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5l15 6v11c0 10-6 17-15 21C15 39 9 32 9 22V11z"/><path d="M17 24l5 5 9-10"/></svg>
+        <h3>Cybersecurity service &amp; training</h3>
+        <p>Security services to protect your systems, plus training for teams and students.</p>
+        <ul class="tags"><li>Security services</li><li>Training</li></ul>
+        <a class="btn pri" href="https://forms.gle/NBiHPKxUJfYfkV46A" data-embed="https://docs.google.com/forms/d/e/1FAIpQLScVWFGcL0HlBtR1d0_1qbb37Qwq4oumC44Y8OW3SJdb1dGu8w/viewform?embedded=true" data-title="Cybersecurity service &amp; training" target="_blank" rel="noopener">Fill enquiry form</a>
+      </article>
+      <article class="sc">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 20v8h8l14 9V11l-14 9z"/><path d="M34 18c3 3 3 9 0 12M39 13c6 6 6 16 0 22"/></svg>
+        <h3>Performance &amp; influencer marketing</h3>
+        <p>Paid campaigns and creator partnerships built around measurable results.</p>
+        <ul class="tags"><li>Performance ads</li><li>Influencers</li></ul>
+        <a class="btn pri" href="https://forms.gle/iHVNTPfRa1WJZcuY6" data-embed="https://docs.google.com/forms/d/e/1FAIpQLScIyeBXC1BjJWg4BNOIeR1mB2Vh5ho7b7OCTanW49UBurKZTQ/viewform?embedded=true" data-title="Performance &amp; influencer marketing" target="_blank" rel="noopener">Fill enquiry form</a>
+      </article>
+      <article class="sc">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="14" width="38" height="26" rx="4"/><circle cx="24" cy="27" r="8"/><path d="M17 14l3-6h8l3 6"/></svg>
+        <h3>Fashion model shooting</h3>
+        <p>Fashion and model shoots for brands, catalogues and social media.</p>
+        <ul class="tags"><li>Brand shoots</li><li>Catalogues</li><li>Social</li></ul>
+        <a class="btn pri" href="https://linktr.ee/rakshaastra.team" target="_blank" rel="noopener">Book on Linktree</a>
+      </article>
+      <article class="sc">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="9" width="38" height="30" rx="4"/><path d="M20 18l12 6-12 6z"/><path d="M5 33h38"/></svg>
+        <h3>Graphic designing | video editing | animation</h3>
+        <p>Logos, social creatives, edited videos and animation that give your brand a sharp look.</p>
+        <ul class="tags"><li>Graphic design</li><li>Video editing</li><li>Animation</li></ul>
+        <a class="btn pri" href="https://forms.gle/qDHfvwH7xEADuCRk7" data-embed="https://docs.google.com/forms/d/e/1FAIpQLSeQoP2jEMQ2ymncf1xHpferN5yNCd-z2gOrxiXXqbSnUsl00A/viewform?embedded=true" data-title="Graphic designing | video editing | animation" target="_blank" rel="noopener">Fill enquiry form</a>
+      </article>
+      <article class="sc">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 18h32l-3 20H11z"/><path d="M16 18c0-6 3.5-10 8-10s8 4 8 10"/><path d="M19 27h10"/></svg>
+        <h3>Shopify POS maintenance &amp; services</h3>
+        <p>Setup, upkeep and support for your Shopify POS so your store runs smoothly.</p>
+        <ul class="tags"><li>POS setup</li><li>Maintenance</li><li>Support</li></ul>
+        <a class="btn pri" href="https://linktr.ee/rakshaastra.team" target="_blank" rel="noopener">Enquire on Linktree</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="clients">
+  <div class="wrap">
+    <span class="kicker">Trusted by</span>
+    <h2>Clients &amp; sourcing companies</h2>
+    <p class="lede">Businesses we work with and source for.</p>
+    <div class="cl">
+      <div><span class="dot"></span><h3>Linen Trinine LLP</h3><p>Client and sourcing partner</p></div>
+      <div><span class="dot"></span><h3>Noasec Cybersecurity Solution</h3><p>Client and sourcing partner</p></div>
+      <div><span class="dot"></span><h3>Urbanzi Solutions</h3><p>Client and sourcing partner</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="band">
+  <div class="wrap">
+    <span class="kicker">Portfolio</span>
+    <h2>Previous <span class="grad">work</span></h2>
+    <p class="lede">See the complete list of what we have made: reels, videos and story-based ads.</p>
+    <div class="wgrid">
+      <a href="https://www.instagram.com/rakshaastra.team/reels/" target="_blank" rel="noopener"><h3>Instagram reels</h3><p>Our short-form work, all in one place.</p><b>Watch on Instagram ↗</b></a>
+      <a href="https://youtube.com/playlist?list=PLIHuqSX63ktnmH4t9uqU2gWxugbJjYU01&amp;si=eHDdeGW5Z-XC_cny" target="_blank" rel="noopener"><h3>YouTube playlist</h3><p>The complete list of our previous videos.</p><b>Watch on YouTube ↗</b></a>
+      <a href="https://drive.google.com/drive/folders/1tABBHdnUWKa5GRSLBc_m2uldtRKYxzSk?usp=drive_link" target="_blank" rel="noopener"><h3>Story-based ads</h3><p>Ad films that sell through a short story.</p><b>Open the folder ↗</b></a>
+    </div>
+  </div>
+</section>
+
+<section id="register">
+  <div class="wrap">
+    <span class="kicker">Join our network</span>
+    <h2>Talent <span class="grad">registration</span></h2>
+    <p class="lede">Singers, dancers, creators, influencers and models can register here. We contact suitable talent when relevant projects come in.</p>
+    <div class="sgrid">
+      <article class="sc">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="18" y="5" width="12" height="22" rx="6"/><path d="M11 22c0 8 6 13 13 13s13-5 13-13M24 35v8M17 43h14"/></svg>
+        <h3>Singers | Dancers Registration Form</h3>
+        <p>Join our network of singers and dancers for videos, ads and live opportunities.</p>
+        <ul class="tags"><li>Singers</li><li>Dancers</li></ul>
+        <a class="btn pri" href="https://forms.gle/43bDUPeDoGG9cgi67" data-embed="https://docs.google.com/forms/d/e/1FAIpQLSdiVaSoXUIhbDtHj-AvjG8UaOcKbszcoYiAq948C06DZPuDOg/viewform?embedded=true" data-title="Singers | Dancers Registration Form" target="_blank" rel="noopener">Register now</a>
+      </article>
+      <article class="sc">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="14" y="4" width="20" height="40" rx="4"/><circle cx="24" cy="20" r="5"/><path d="M19 32h10M22 38h4"/></svg>
+        <h3>Creators | Influencers Registration Form</h3>
+        <p>Register as a content creator or influencer for brand campaigns and collaborations.</p>
+        <ul class="tags"><li>Creators</li><li>Influencers</li></ul>
+        <a class="btn pri" href="https://forms.gle/Kv6HWkuvNiGCDLXY7" data-embed="https://docs.google.com/forms/d/e/1FAIpQLSfpkfMXKFMo50mETeREhHvpGwAEbjpT2p9WvbAZ6Mpoq_OH4A/viewform?embedded=true" data-title="Creators | Influencers Registration Form" target="_blank" rel="noopener">Register now</a>
+      </article>
+      <article class="sc">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="10" r="4"/><path d="M24 14v4L6 30a3 3 0 0 0 2 5h32a3 3 0 0 0 2-5L24 18"/></svg>
+        <h3>Models | Fashion Creators Registration Form</h3>
+        <p>Join our fashion network and get considered for upcoming fashion shoots.</p>
+        <ul class="tags"><li>Models</li><li>Fashion creators</li></ul>
+        <a class="btn pri" href="https://forms.gle/WgwVoqiMuGazed8M7" data-embed="https://docs.google.com/forms/d/e/1FAIpQLScMPq4T2ahUlRnnFlAQR7nVMc-WYGiqFo20DcciL9Nnb0e7wQ/viewform?embedded=true" data-title="Models | Fashion Creators Registration Form" target="_blank" rel="noopener">Register now</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="cta">
+      <h2>Ready to start your <span class="grad">project?</span></h2>
+      <p class="lede">Choose a service from our link page, or write to us directly.</p>
+      <div class="btns">
+        <a class="btn pri" href="https://linktr.ee/rakshaastra.team" target="_blank" rel="noopener">Open our Linktree</a>
+        <a class="btn" href="mailto:rakshaastra.services@gmail.com">Email us</a>
+        <a class="btn" href="https://www.instagram.com/rakshaastra.team/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><h4>RAKSHAĀSTRA TEAM</h4><p>Software, security, marketing, and creative production from one team.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="#services">Services</a></li><li><a href="#clients">Clients</a></li><li><a href="#work">Work</a></li><li><a href="#register">Register</a></li></ul></div>
+      <div><h4>Connect</h4><ul><li><a href="https://linktr.ee/rakshaastra.team" target="_blank" rel="noopener">Linktree</a></li><li><a href="https://www.instagram.com/rakshaastra.team/" target="_blank" rel="noopener">Instagram</a></li><li><a href="mailto:rakshaastra.services@gmail.com">Email</a></li></ul></div>
+    </div>
+    <div class="copy">&copy; <span id="y">2026</span> RAKSHAĀSTRA COMPLETE SOLUTIONS. All rights reserved.</div>
+  </div>
+</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mt">
+  <div class="mbox">
+    <div class="mhead"><h3 id="mt">Enquiry form</h3><a id="mo" href="#" target="_blank" rel="noopener">Open in new tab</a><button id="mc" aria-label="Close form">✕</button></div>
+    <iframe id="mf" title="Enquiry form" loading="lazy"></iframe>
+  </div>
+</div>
+<script>
+(function(){
+var M=document.getElementById("modal"),F=document.getElementById("mf"),T=document.getElementById("mt"),O=document.getElementById("mo"),last;
+function close(){M.classList.remove("open");F.removeAttribute("src");document.body.style.overflow="";if(last)last.focus()}
+document.addEventListener("click",function(e){
+  var a=e.target.closest("a[data-embed]");
+  if(a){e.preventDefault();last=a;T.textContent=a.getAttribute("data-title");O.href=a.href;F.src=a.getAttribute("data-embed");M.classList.add("open");document.body.style.overflow="hidden";document.getElementById("mc").focus();return}
+  if(e.target===M||e.target.id==="mc")close();
+});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"&&M.classList.contains("open"))close()});
+
+/* Source-view deterrent: blocks casual right-click and common inspect shortcuts. */
+document.addEventListener("contextmenu",function(e){e.preventDefault()});
+document.addEventListener("dragstart",function(e){e.preventDefault()});
+document.addEventListener("keydown",function(e){
+  var k=(e.key||"").toLowerCase(),c=e.ctrlKey||e.metaKey;
+  if(e.key==="F12"||(c&&e.shiftKey&&["i","j","c","k"].indexOf(k)>-1)||(c&&["u","s"].indexOf(k)>-1)||(e.metaKey&&e.altKey&&["i","j","u","c"].indexOf(k)>-1)){e.preventDefault();e.stopPropagation();return false}
+},true);
+})();
+</script>
+<script>
+document.getElementById("y").textContent=new Date().getFullYear();
+var b=document.getElementById("burger"),m=document.getElementById("menu");
+b.addEventListener("click",function(){var o=m.classList.toggle("open");b.setAttribute("aria-expanded",o)});
+m.addEventListener("click",function(e){if(e.target.tagName==="A"){m.classList.remove("open");b.setAttribute("aria-expanded","false")}});
+</script>
+</body>
+</html>
